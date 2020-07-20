@@ -1,0 +1,33 @@
+server:
+  port: 8181
+# debug: true
+spring:
+  thymeleaf:
+    cache: false # 关闭页面缓存
+    encoding: UTF-8 # 模板编码
+    # prefix: classpath:/templates/  # 页面映射路径
+    # suffix: .html # 试图后的后缀
+    # mode: HTML5 # 模板模式
+    # 开启热部署
+    devtools:
+      restart:
+        enabled: true  #设置开启热部署
+      freemarker:
+        cache: false    #页面不加载缓存，修改即时生效
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    password: 123456
+    username: root
+    driver-class-name : com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+# 其他具体配置可参考org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties
+# 上面的配置实际上就是注入该类的属性值
+# mybatis:
+#  type-aliases-package: com.test.sq1.entity
+#  mapper-locations: classpath:mapper/*.xml
+
+
