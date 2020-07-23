@@ -1,4 +1,4 @@
-## Vue+SpringBoot后台管理实战demo
+# Vue+SpringBoot后台业务
 
 
 vue+springboot实现CRUD，前后端分离
@@ -7,8 +7,11 @@ vue+springboot实现CRUD，前后端分离
 
 [后端项目](https://github.com/Relyonyou/Vue-SpringBoot--demo)
 
-`vue create my-project  `
+## 注意事项：
 
- `OR `
+- 修改配置数据库的信息
 
- ` vue ui `
+- 需要用到IDEA中的Lombok插件
+
+
+
